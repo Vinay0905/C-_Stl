@@ -1,0 +1,36 @@
+What is an Unordered-multiset?
+An unordered_multiset in STL is an associative container just like an unordered set the only difference is it can store duplicate elements in it.
+
+Syntax:
+unordered_multiset<object_type> variable_name;
+Example:
+unordered_multiset<int> s;
+unordered_multiset<string> str;
+Functions in multiset:
+insert() – to insert an element in the unordered multiset.
+unordered_multiset<int> s;
+s.insert(1);
+s.insert(2);
+begin() – return an iterator pointing to the first element in the unordered multiset.
+s.begin();
+end() – returns an iterator to the theoretical element after the last element.
+s.end();
+count() – gives the count of a particular element in the unordered multiset.
+unordered_multiset<int> s;
+s.insert(1);
+s.insert(2);
+s.count(2); //returns 1
+clear() – deletes all the elements in the unordered multiset.
+s.clear();
+find() – to search an element in the unordered multiset.
+unordered_multiset<int> s;
+s.insert(1);
+s.insert(2);
+if(s.find(2)!=s.end())
+cout<<"true"<<endl;
+erase() – to delete a single element or elements between a particular range.
+s.erase();
+size() – returns the size of the unordered multiset.
+s.size();
+empty() – to check if the unordered multiset is empty or not.
+s.empty();
